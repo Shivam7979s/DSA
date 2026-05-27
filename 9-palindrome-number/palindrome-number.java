@@ -1,12 +1,12 @@
 class Solution {
     public boolean isPalindrome(int x) {
-        int org=x;
-        int rev=0;
+        int orignal=x;
+        int reverse=0;
         for(; x>0;x=x/10){
             int rem=x%10;
-            rev=rev*10+rem;
+            reverse=reverse*10+rem;
         }
-        if(rev==org){
+        if(reverse==orignal){
             return true;
         }
         else{
