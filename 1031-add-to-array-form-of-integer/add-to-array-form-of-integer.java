@@ -1,14 +1,11 @@
 class Solution {
     public List<Integer> addToArrayForm(int[] num, int k) {
-           List<Integer> ans = new ArrayList<>();
+          List<Integer> ans = new ArrayList<>();
 
-        int i = num.length - 1;
+        for(int i = num.length - 1; i >= 0 || k > 0; i--) {
 
-        while (i >= 0 || k > 0) {
-
-            if (i >= 0) {
+            if(i >= 0) {
                 k = k + num[i];
-                i--;
             }
 
             ans.add(0, k % 10);
