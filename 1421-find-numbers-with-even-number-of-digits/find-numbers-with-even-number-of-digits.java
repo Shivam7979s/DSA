@@ -6,7 +6,7 @@ class Solution {
         for(int i = 0; i < nums.length; i++) {
             int count = 0;
 
-            for(; nums[i] > 0; nums[i] = nums[i] / 10) {
+           for(int num = nums[i]; num > 0; num = num / 10){
                 count++;
             }
 
