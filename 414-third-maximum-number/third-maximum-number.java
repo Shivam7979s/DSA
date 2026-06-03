@@ -6,7 +6,7 @@ class Solution {
 
         for (int num : nums) {
 
-            // duplicate skip
+
             if (num == first || num == second || num == third) {
                 continue;
             }
@@ -25,7 +25,6 @@ class Solution {
             }
         }
 
-        // agar third maximum exist nahi karta
         if (third == Long.MIN_VALUE) {
             return (int) first;
         }
