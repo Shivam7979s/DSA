@@ -6,7 +6,6 @@ class Solution {
 
         for (int num : nums) {
 
-
             if (num == first || num == second || num == third) {
                 continue;
             }
@@ -15,23 +14,14 @@ class Solution {
                 third = second;
                 second = first;
                 first = num;
-            }
-            else if (num > second) {
+            } else if (num > second) {
                 third = second;
                 second = num;
-            }
-            else if (num > third) {
+            } else if (num > third) {
                 third = num;
             }
         }
 
-        if (third == Long.MIN_VALUE) {
-            return (int) first;
-        }
-
-        return (int) third;
-       
-
-        
+        return third == Long.MIN_VALUE ? (int) first : (int) third;
     }
 }
