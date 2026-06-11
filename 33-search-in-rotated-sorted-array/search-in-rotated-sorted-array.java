@@ -8,6 +8,7 @@ class Solution {
             if(nums[mid]==target){
                 return mid;
             }
+            //Left half is sorted
             if(nums[start]<=nums[mid] ){
                 if(nums[start]<=target && target<=nums[mid]){
                     end=mid-1;
@@ -17,6 +18,7 @@ class Solution {
                 }
 
             }
+            // Right half is sorted
             else {
                 if(nums[mid]<=target && target<=nums[end]){
                     start=mid+1;
