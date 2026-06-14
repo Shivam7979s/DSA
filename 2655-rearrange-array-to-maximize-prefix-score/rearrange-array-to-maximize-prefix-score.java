@@ -3,7 +3,7 @@ import java.util.Arrays;
 class Solution {
     public int maxScore(int[] nums) {
 
-        Arrays.sort(nums);
+       Arrays.sort(nums);
 
         for(int i = 0, j = nums.length - 1; i < j; i++, j--){
             int temp = nums[i];
