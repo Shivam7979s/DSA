@@ -1,18 +1,19 @@
 class Solution {
     public int reverse(int x) {
-        int reverse = 0;
+        int reverse=0;
 
-        for (; x != 0; x /= 10) {
-            int rem = x % 10;
-
-            if (reverse > Integer.MAX_VALUE / 10 ||
+    
+        for(;x!=0;x=x/10){
+            int rem=x%10;
+              if (reverse > Integer.MAX_VALUE / 10 ||
                 reverse < Integer.MIN_VALUE / 10) {
                 return 0;
             }
+            reverse=reverse*10+rem;
 
-            reverse = reverse * 10 + rem;
         }
-
         return reverse;
+
+        
     }
 }
