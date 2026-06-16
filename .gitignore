@@ -1,0 +1,47 @@
+# Compiled Java files
+*.class
+
+# Package files
+*.jar
+*.war
+*.rar
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Maven
+target/
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+
+# Gradle
+.gradle
+build/
+gradle-app.setting
+.gradletasknamecache
+
+# Logging
+*.log
+
+# IDE Files
+*.iml
+*.iws
+*.ipr
+
+# Python
+__pycache__/
+*.pyc
+
+# Node (if any)
+node_modules/
+package-lock.json
+
+# OS
+.DS_Store
+Thumbs.db
