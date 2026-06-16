@@ -3,8 +3,6 @@ class Solution {
         int count = 0;
 
         for (int i = 0; i < nums1.length; i++) {
-
-            // check if nums1[i] is duplicate
             boolean duplicate = false;
             for (int k = 0; k < i; k++) {
                 if (nums1[i] == nums1[k]) {
