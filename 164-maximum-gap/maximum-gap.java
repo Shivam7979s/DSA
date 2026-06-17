@@ -1,7 +1,7 @@
 class Solution {
     public int maximumGap(int[] nums) {
-        if(nums.length==1){
-            return 0;
+        if(nums.length < 2){
+        return 0;
         }
         Arrays.sort(nums);
        
