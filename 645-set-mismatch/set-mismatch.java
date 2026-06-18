@@ -1,25 +1,25 @@
 class Solution {
     public int[] findErrorNums(int[] nums) {
-        int i = 0;
+        Arrays.sort(nums);
 
-        while (i < nums.length) {
-            int correct = nums[i] - 1;
+        int[] arr = new int[2];
 
-            if (nums[i] != nums[correct]) {
-                int temp = nums[i];
-                nums[i] = nums[correct];
-                nums[correct] = temp;
-            } else {
-                i++;
+        for (int i = 1; i < nums.length; i++) {
+            if (nums[i] == nums[i - 1]) {
+                arr[0] = nums[i];
             }
         }
 
-        for (i = 0; i < nums.length; i++) {
-            if (nums[i] != i + 1) {
-                return new int[]{nums[i], i + 1};
-            }
+        int sum = 0;
+        for (int x : nums) {
+            sum += x;
         }
 
-        return new int[]{-1, -1};
+        int n = nums.length;
+        int expected = n * (n + 1) / 2;
+
+        arr[1] = expected - (sum - arr[0]);
+
+        return arr;
     }
 }
