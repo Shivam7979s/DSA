@@ -1,22 +1,22 @@
 class Solution {
     public int majorityElement(int[] nums) {
         int n=nums.length;
-        int mejority=nums[0],vote=0;
+        int majority=nums[0],vote=0;
 
         for(int i=0;i<n;i++){
             if(vote==0){
                 vote++;
-                mejority=nums[i];
+                majority=nums[i];
                 
             }
-            else if(nums[i]==mejority){
+            else if(nums[i]==majority){
                 vote++;
             }
             else{
                 vote--;
             }
         }
-        return mejority;
+        return majority;
 
     
     }
