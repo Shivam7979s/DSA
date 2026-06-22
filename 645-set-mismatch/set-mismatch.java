@@ -13,6 +13,7 @@ class Solution {
             if(nums[ind]>0){
                 nums[ind]*=-1;
             }
+           
         }
         for(int i=0;i<nums.length;i++){
             if(nums[i]>0){
