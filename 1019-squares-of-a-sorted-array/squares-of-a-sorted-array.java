@@ -7,7 +7,5 @@ class Solution {
         }
         Arrays.sort(ans); 
         return ans;
-        
-        
     }
 }
