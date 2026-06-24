@@ -5,7 +5,7 @@ class Solution {
         for(int i=0;i<nums.length;i++){
             ans[i]=nums[i]*nums[i];
         }
-        Arrays.sort(ans); 
+        Arrays.sort(ans); //
         return ans;
     }
 }
