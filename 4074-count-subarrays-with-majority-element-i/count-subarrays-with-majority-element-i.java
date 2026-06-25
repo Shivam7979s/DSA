@@ -10,7 +10,6 @@ class Solution {
                 if (nums[j] == target) {
                     targetCount++;
                 }
-
                 int len = j - i + 1;
 
                 if (targetCount > len / 2) {
@@ -18,7 +17,6 @@ class Solution {
                 }
             }
         }
-
         return ans;
     }
 }
