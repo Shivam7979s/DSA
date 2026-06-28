@@ -5,20 +5,15 @@ class Solution {
         int n=nums.length;
         int max=nums[0];
 
-        for(int i=1;i<n;i++){
-            if(nums[i]==nums[i-1] || nums[i]-1==nums[i-1] || nums[i]+1==nums[i-1]){
-                if(max<nums[i]){
-                    max=nums[i];
-                }
-                continue;
-            }
-            else {
+         for(int i=1;i<n;i++){
+             if(nums[i]>nums[i-1]+1){
                 nums[i]=nums[i-1]+1;
-                if(max<nums[i]){
+                
+             }
+             if(max<nums[i]){
                     max=nums[i];
                 }
             }
-        }
         return max;
 
     }
