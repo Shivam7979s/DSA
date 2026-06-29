@@ -4,7 +4,8 @@ class Solution {
         int ans = 0;
 
         for (int i = 0; i < n; i++) {
-            if (word.indexOf(patterns[i]) != -1) {
+            int index=word.indexOf(patterns[i]);
+            if (index != -1) {
                 ans++;
             }
         }
