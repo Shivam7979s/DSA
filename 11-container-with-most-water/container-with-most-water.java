@@ -6,17 +6,18 @@ class Solution {
         int last=height.length-1;
         int most=0;
         while(start<last){
+            int distance=last-start;
             if(height[start]<height[last]){
-                int ct=height[start]*(last-start);
-                if(most<ct){
-                    most=ct;
+                int area=height[start]*distance;
+                if(most<area){
+                    most=area;
                 }
                 start++;
             }
             else{
-                int ct=height[last]*(last-start);
-                if(most<ct){
-                    most=ct;
+                int area=height[last]*distance;
+                if(most<area){
+                    most=area;
                 }
                 last--;
             }
