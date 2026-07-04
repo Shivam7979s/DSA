@@ -3,8 +3,7 @@ class Solution {
         int count=0;
         return reduce(num, count);
        
-    }
-    public int reduce(int n,int count){
+    }public int reduce(int n,int count){
        
         if(n==0){
           
