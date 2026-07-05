@@ -27,10 +27,8 @@ class Solution {
             return nums[ans];
         }
         else{
-            int a=n/2;
-            double b=nums[a]+nums[a-1];
-            double ans=b/2;
-            return ans;
+            double b=nums[n/2]+nums[(n/2)-1];
+            return b/2;
         }
         
     }
