@@ -5,13 +5,23 @@ class Solution {
         int[] nums=new int[n1+n2];
         int n=nums.length;
 
-        for(int i=0;i<n1;i++){
-            nums[i]=nums1[i];
+        int i = 0, j = 0, k = 0;
+    
+        while (i < n1 && j < n2) {
+            if (nums1[i] <= nums2[j]) {
+                nums[k++] = nums1[i++];
+            } else {
+                nums[k++] = nums2[j++];
+            }
         }
-         for(int i=0,j=n1;i<n2;i++,j++){
-            nums[j]=nums2[i];
+    
+        while (i < n1) {
+            nums[k++] = nums1[i++];
         }
-        Arrays.sort(nums);
+    
+        while (j < n2) {
+            nums[k++] = nums2[j++];
+        }
         if(n%2!=0){
            int ans=n/2;
             return nums[ans];
