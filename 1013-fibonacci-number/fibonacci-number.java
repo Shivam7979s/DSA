@@ -1,12 +1,21 @@
 class Solution {
     public int fib(int n) {
-        return findfib(n);
-
-    }
-    public int findfib(int n){
-        if(n<2){
-            return n;
+        int a=0;
+        int b=1;
+        int temp;
+        for(int i=2;i<=n;i++){
+            temp=a;
+            a=b;
+            b=temp+b;
+            
         }
-        return findfib(n-1)+findfib(n-2);
+        if(n==0){
+            return 0;
+        }
+        else{
+            return b;
+        }
+       
+        
     }
 }
