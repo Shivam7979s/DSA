@@ -6,7 +6,6 @@ class Solution {
         int n=nums.length;
 
         int i = 0, j = 0, k = 0;
-    
         while (i < n1 && j < n2) {
             if (nums1[i] <= nums2[j]) {
                 nums[k++] = nums1[i++];
@@ -14,11 +13,9 @@ class Solution {
                 nums[k++] = nums2[j++];
             }
         }
-    
         while (i < n1) {
             nums[k++] = nums1[i++];
         }
-    
         while (j < n2) {
             nums[k++] = nums2[j++];
         }
@@ -30,6 +27,5 @@ class Solution {
             double b=nums[n/2]+nums[(n/2)-1];
             return b/2;
         }
-        
     }
 }
