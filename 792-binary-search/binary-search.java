@@ -2,8 +2,8 @@ class Solution {
     public int search(int[] nums, int target) {
         int start=0;
         int end=nums.length-1;
-        // return recursive_binary_search(nums, target, start, end);
-        return binary_search(nums, target , start, end);
+        return recursive_binary_search(nums, target, start, end);
+        // return binary_search(nums, target , start, end);
 
     }
     public int recursive_binary_search(int[] nums,int target,int start,int end){    // this is recursive binary search 
@@ -24,7 +24,7 @@ class Solution {
 
         }
     }
-    public int binary_search(int[] nums,int target ,int start,int end){
+    public int binary_search(int[] nums,int target ,int start,int end){  // this is normal binary search
         while(start<=end){
             int mid=start+(end-start)/2;
            
