@@ -1,119 +1,104 @@
-# 📚 DSA - Data Structures & Algorithms Solutions
+# 📚 DSA - Data Structures & Algorithms (Java)
 
-A comprehensive collection of **Data Structures & Algorithms** problem solutions, primarily from **LeetCode**, implemented in **Java**.
+[![GitHub stars](https://img.shields.io/github/stars/Shivam7979s/DSA?style=social)](https://github.com/Shivam7979s/DSA/stargazers) [![Language](https://img.shields.io/github/languages/top/Shivam7979s/DSA)](https://github.com/Shivam7979s/DSA) [![License](https://img.shields.io/github/license/Shivam7979s/DSA)](./LICENSE)
 
-This repository tracks my progress in mastering DSA concepts and problem-solving techniques essential for technical interviews and competitive programming.
-
----
-
-## 📊 Repository Statistics
-
-- **Total Problems Solved**: 58+
-- **Language**: Java
-- **Difficulty Levels**: Easy, Medium, Hard
-- **Topics Covered**: Arrays, Linked Lists, Binary Search, Bit Manipulation, Mathematics, Matrix, Sorting
+Welcome! This repository is my living notebook of Data Structures & Algorithms solutions implemented in Java — focused on learning, interview prep, and improving problem-solving skills.
 
 ---
 
-## 🗂️ Problem Categories
+## ✨ Highlights
 
-### **Arrays & Strings**
+- Purpose: Practice and document problem-solving patterns (LeetCode & other sources).
+- Language: Java (100%)
+- Problems: 58+ (growing)
+- Difficulty: Easy • Medium • Hard
+- Topics: Arrays, Strings, Binary Search, Bit Manipulation, Math, Sorting, Linked Lists, and more
+
+---
+
+## 🚀 Quick Links
+
+- Problems index: / (root folders)
+- Contributing guide: [CONTRIBUTING.md](./CONTRIBUTING.md)
+- License: [LICENSE](./LICENSE)
+
+---
+
+## 📈 LeetCode Activity & Dashboard (Add your username)
+
+To show live LeetCode stats and activity cards in this README, replace YOUR_LEETCODE_USERNAME below with your LeetCode username.
+
+- LeetCode profile: https://leetcode.com/YOUR_LEETCODE_USERNAME
+
+LeetCode summary card (example):
+
+![LeetCode Stats](https://leetcode-stats.vercel.app/api?username=YOUR_LEETCODE_USERNAME&theme=dark)
+
+LeetCode contribution/activity graph (example):
+
+![LeetCode Activity](https://leetcode-stats.vercel.app/api/leetocode?username=YOUR_LEETCODE_USERNAME&theme=dark)
+
+Alternative stat card (compact):
+
+[![LeetCode Badge](https://leetcode-badge.vercel.app/?username=YOUR_LEETCODE_USERNAME)](https://leetcode.com/YOUR_LEETCODE_USERNAME)
+
+How to enable:
+1. Replace each `YOUR_LEETCODE_USERNAME` with your LeetCode username in the links above.
+2. Commit the README — the badges will load automatically on the README page.
+
+If you'd like, I can update these images for you if you share your LeetCode username and prefer a specific theme (dark/light) or card style.
+
+---
+
+## 📊 Repository Statistics (snapshot)
+
+- Total Problems Solved: **58+**
+- Main Language: **Java**
+- Topics Covered: Arrays, Linked Lists, Binary Search, Bit Manipulation, Mathematics, Matrix, Sorting
+
+---
+
+## 🗂️ Problem Categories (sample)
+
+### Arrays & Strings
 - [1013 - Fibonacci Number](./1013-fibonacci-number/) - Dynamic Programming
 - [1019 - Squares of a Sorted Array](./1019-squares-of-a-sorted-array/) - Two Pointers
-- [1031 - Add to Array Form of Integer](./1031-add-to-array-form-of-integer/) - Array Manipulation
-- [1421 - Find Numbers with Even Number of Digits](./1421-find-numbers-with-even-number-of-digits/)
-- [1482 - How Many Numbers are Smaller than Current](./1482-how-many-numbers-are-smaller-than-the-current-number/)
-- [1603 - Running Sum of 1D Array](./1603-running-sum-of-1d-array/) - Prefix Sum
-- [1635 - Number of Good Pairs](./1635-number-of-good-pairs/)
-- [1791 - Richest Customer Wealth](./1791-richest-customer-wealth/)
-- [1833 - Find the Highest Altitude](./1833-find-the-highest-altitude/)
-- [1848 - Sum of Unique Elements](./1848-sum-of-unique-elements/)
-- [2048 - Build Array from Permutation](./2048-build-array-from-permutation/)
-- [2058 - Concatenation of Array](./2058-concatenation-of-array/)
-- [2486 - Most Frequent Even Element](./2486-most-frequent-even-element/)
-- [2655 - Rearrange Array to Maximize Prefix Score](./2655-rearrange-array-to-maximize-prefix-score/)
-- [3172 - Divisible and Non-Divisible Sums Difference](./3172-divisible-and-non-divisible-sums-difference/)
+- [1031 - Add to Array Form of Integer](./1031-add-to-array-form-of-integer/)
+- More problems are organized in folders at the repository root.
 
-### **Bit Manipulation**
-- [136 - Single Number](./136-single-number/) - XOR Operation
-- [137 - Single Number II](./137-single-number-ii/) - Bit Counting
-
-### **Binary Search**
+### Binary Search
 - [33 - Search in Rotated Sorted Array](./33-search-in-rotated-sorted-array/)
 - [34 - Find First and Last Position of Element](./34-find-first-and-last-position-of-element-in-sorted-array/)
-- [35 - Search Insert Position](./35-search-insert-position/)
-- [162 - Find Peak Element](./162-find-peak-element/)
-- [367 - Valid Perfect Square](./367-valid-perfect-square/)
-- [540 - Single Element in Sorted Array](./540-single-element-in-a-sorted-array/)
-- [745 - Find Smallest Letter Greater Than Target](./745-find-smallest-letter-greater-than-target/)
-- [792 - Binary Search](./792-binary-search/)
 
-### **Sorting & Searching**
-- [26 - Remove Duplicates from Sorted Array](./26-remove-duplicates-from-sorted-array/)
-- [27 - Remove Element](./27-remove-element/)
-- [48 - Rotate Image](./48-rotate-image/) - Matrix Rotation
-- [66 - Plus One](./66-plus-one/)
-- [74 - Search a 2D Matrix](./74-search-a-2d-matrix/)
-- [75 - Sort Colors](./75-sort-colors/) - Three-way Partition
-- [217 - Contains Duplicate](./217-contains-duplicate/)
-- [219 - Contains Duplicate II](./219-contains-duplicate-ii/)
-- [240 - Search a 2D Matrix II](./240-search-a-2d-matrix-ii/)
-- [268 - Missing Number](./268-missing-number/)
-- [283 - Move Zeroes](./283-move-zeroes/)
-- [349 - Intersection of Two Arrays](./349-intersection-of-two-arrays/)
-- [414 - Third Maximum Number](./414-third-maximum-number/)
-- [485 - Max Consecutive Ones](./485-max-consecutive-ones/)
-
-### **Mathematics & Logic**
-- [7 - Reverse Integer](./7-reverse-integer/)
-- [9 - Palindrome Number](./9-palindrome-number/)
-- [29 - Divide Two Integers](./29-divide-two-integers/)
-- [121 - Best Time to Buy and Sell Stock](./121-best-time-to-buy-and-sell-stock/)
-- [169 - Majority Element](./169-majority-element/) - Boyer-Moore Voting
-- [507 - Perfect Number](./507-perfect-number/)
-- [1115 - Valid Boomerang](./1115-valid-boomerang/)
-- [1137 - Height Checker](./1137-height-checker/)
-- [2571 - Find the Pivot Integer](./2571-find-the-pivot-integer/)
-
-### **Linked Lists**
-- [2 - Add Two Numbers](./2-add-two-numbers/)
-
-### **Advanced Algorithms**
-- [724 - Find Pivot Index](./724-find-pivot-index/) - Prefix/Suffix Sum
-- [882 - Peak Index in a Mountain Array](./882-peak-index-in-a-mountain-array/)
-- [941 - Sort Array by Parity](./941-sort-array-by-parity/)
-- [948 - Sort Array by Parity II](./958-sort-array-by-parity-ii/)
+(See the repo root for the full list of problem folders)
 
 ---
 
-## 🚀 How to Use
+## 🧰 How to Use
 
-### **Clone the Repository**
+Clone the repository:
+
 ```bash
 git clone https://github.com/Shivam7979s/DSA.git
 cd DSA
 ```
 
-### **Compile and Run a Solution**
+Compile and run a solution (if it has a main):
+
 ```bash
-# Navigate to problem directory
+# Example: Fibonacci
 cd 1013-fibonacci-number
-
-# Compile
 javac Solution.java
-
-# Run (if main method exists)
 java Solution
 ```
 
-### **Problem Structure**
-Each problem folder typically contains:
-- `Solution.java` - Main solution implementation
-- `README.md` - Problem description and explanation
+Problem folder structure (typical):
+- Solution.java — implementation
+- README.md — problem description & explanation
 
 ---
 
-## 📈 Learning Progress
+## 📈 Learning Progress (current breakdown)
 
 | Topic | Easy | Medium | Hard | Total |
 |-------|------|--------|------|-------|
@@ -127,98 +112,36 @@ Each problem folder typically contains:
 
 ---
 
-## 💡 Key Concepts Covered
+## 🎯 Why this repo?
 
-### **Problem-Solving Techniques**
-- Two Pointers / Sliding Window
-- Binary Search
-- Bit Manipulation (XOR, AND, OR)
-- Prefix/Suffix Sum
-- Sorting & Searching
-- Dynamic Programming
-- Matrix Manipulation
-- Linked List Operations
-
-### **Algorithms Implemented**
-- Boyer-Moore Voting Algorithm
-- Binary Search Variants
-- Merge operations
-- Partition algorithms
-- Search in rotated arrays
-
----
-
-## 🎯 Interview Preparation
-
-This repository is organized to help with:
-- ✅ **FAANG Interviews** - Covers commonly asked questions
-- ✅ **Coding Interviews** - Problem patterns and approaches
-- ✅ **Competitive Programming** - Algorithm optimization
-- ✅ **Technical Growth** - Building strong fundamentals
-
----
-
-## 📝 Time & Space Complexity
-
-Each solution is optimized for:
-- **Time Complexity**: Minimal operations needed
-- **Space Complexity**: Optimal use of auxiliary space
-
-Examples:
-- Most array problems: O(n) time, O(1) space
-- Binary search: O(log n) time
-- Two-pointer: O(n) time, O(1) space
-
----
-
-## 🏆 Best Practices
-
-- Clean, readable code with comments
-- Efficient algorithms (avoiding brute force)
-- Edge case handling
-- Multiple approaches (when applicable)
-
----
-
-## 📚 Resources & References
-
-- [LeetCode](https://leetcode.com/) - Problem source
-- [GeeksforGeeks](https://www.geeksforgeeks.org/) - Algorithm explanations
-- [Cracking the Coding Interview](https://www.crackingthecodinginterview.com/) - Interview prep
+- Organized practice for interview preparation (patterns, edge-cases, optimized solutions)
+- Keeps track of progress and topics to revisit
+- Shareable examples and explanations for others to learn from
 
 ---
 
 ## 🤝 Contributing
 
-If you'd like to add solutions or improvements:
-1. Create a new branch
-2. Add your solution in the appropriate folder
-3. Include a README with problem explanation
-4. Submit a pull request
-
-See [CONTRIBUTING.md](./CONTRIBUTING.md) for detailed guidelines.
-
----
-
-## 📄 License
-
-This project is licensed under the **MIT License** - see [LICENSE](./LICENSE) file for details.
+Contributions are welcome! Please follow the process in [CONTRIBUTING.md](./CONTRIBUTING.md):
+1. Fork the repo
+2. Create a branch for your work
+3. Add your solution in a new folder with a README explaining the approach
+4. Open a pull request
 
 ---
 
 ## 🔗 Connect
 
-- **GitHub**: [@Shivam7979s](https://github.com/Shivam7979s)
-- **LeetCode**: [Your LeetCode Profile] (Add your profile link)
+- GitHub: [@Shivam7979s](https://github.com/Shivam7979s)
+- LeetCode: https://leetcode.com/YOUR_LEETCODE_USERNAME  (replace with your username)
 
 ---
 
 ## 🌟 Star This Repo
 
-If you find this helpful, please consider giving it a ⭐ star! It motivates me to add more solutions and improve the content.
+If you find these solutions helpful, please give it a ⭐ — it motivates me to keep adding more problems and explanations.
 
 ---
 
-**Last Updated**: June 16, 2026  
-**Total Problems**: 58+  
+**Last Updated**: July 10, 2026
 **Current Focus**: Binary Search & Advanced Array Techniques
