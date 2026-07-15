@@ -1,23 +1,29 @@
 class Solution {
     public int gcdOfOddEvenSums(int n) {
+        int odd = 0;
+        int even = 0;
 
-        // int oddsum = 1;
-        // int odd=0;
+        int oddNum = 1;
+        int evenNum = 2;
 
-        // int evensum=2;
-        // int even=0;
+        while (n > 0) {
+            odd += oddNum;
+            even += evenNum;
 
-        // while( n>0){
-        //     odd=odd+oddsum;
-        //     oddsum = oddsum+2;
+            oddNum += 2;
+            evenNum += 2;
+            n--;
+        }
 
-        //     even =even+evensum;
-        //     evensum= evensum+2;
-        //     n=n-1;
-        // }
+        return gcd(odd, even);
+    }
 
-        // return Math.abs(odd-even);
-
-        return n;        
+    private int gcd(int a, int b) {
+        while (b != 0) {
+            int temp = b;
+            b = a % b;
+            a = temp;
+        }
+        return a;
     }
 }
