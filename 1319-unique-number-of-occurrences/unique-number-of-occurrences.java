@@ -7,8 +7,6 @@ class Solution {
                 distinct++;
             }
         }
-
-          // Store frequencies
         int[] freq = new int[distinct];
 
         int index = 0;
@@ -23,21 +21,13 @@ class Solution {
                 count = 1;
             }
         }
-
-
-           // Store last frequency
         freq[freq.length-1] = count;
         Arrays.sort(freq);
-        
-
         for(int i=1;i<freq.length;i++){
             if(freq[i]==freq[i-1]){
                 return false;
             }
         }
-
-        
- 
         return true;
     }
 }
