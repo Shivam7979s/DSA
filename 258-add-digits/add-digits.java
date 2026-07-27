@@ -11,7 +11,5 @@ class Solution {
             num=digits;
         }
         return num;
-
-        
     }
 }
