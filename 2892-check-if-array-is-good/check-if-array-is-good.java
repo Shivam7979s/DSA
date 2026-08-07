@@ -8,7 +8,7 @@ class Solution {
         int base=n-1;
         Arrays.sort(nums);
         for(int i=0;i<base;i++){
-            if(i+1!=nums[i] && i<base){
+            if(i+1!=nums[i]){
                 return false;
             }
            
