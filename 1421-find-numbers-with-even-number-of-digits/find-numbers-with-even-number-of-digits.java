@@ -4,9 +4,10 @@ class Solution {
         int ans = 0;
         for(int i = 0; i < nums.length; i++) {
             int count = 0;
-
-           for(int num = nums[i]; num != 0; num = num / 10){
+            int n=nums[i];
+            while(n!=0){
                 count++;
+                n/=10;
             }
             if(count % 2 == 0) {
                 ans++;
