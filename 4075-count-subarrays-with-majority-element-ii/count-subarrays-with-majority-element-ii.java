@@ -1,64 +1,40 @@
-import java.util.*;
-
 class Solution {
-
-    static class Fenwick {
-        int[] bit;
-
-        Fenwick(int n) {
-            bit = new int[n + 2];
-        }
-
-        void update(int idx, int val) {
-            while (idx < bit.length) {
-                bit[idx] += val;
-                idx += idx & -idx;
-            }
-        }
-
-        int query(int idx) {
-            int sum = 0;
-            while (idx > 0) {
-                sum += bit[idx];
-                idx -= idx & -idx;
-            }
-            return sum;
-        }
-    }
-
     public long countMajoritySubarrays(int[] nums, int target) {
-
         int n = nums.length;
-        int[] prefix = new int[n + 1];
+        long cnt = 0;
 
         for (int i = 0; i < n; i++) {
-            prefix[i + 1] = prefix[i] + (nums[i] == target ? 1 : -1);
+            if (nums[i] == target) nums[i] = 1;
+            else nums[i] = -1;
         }
 
-        int[] sorted = prefix.clone();
-        Arrays.sort(sorted);
+        int[] pref = new int[n];
+        pref[0] = nums[0];
 
-        Map<Integer, Integer> map = new HashMap<>();
-        int rank = 1;
+        for (int i = 1; i < n; i++) {
+            pref[i] = pref[i - 1] + nums[i];
+        }
 
-        for (int x : sorted) {
-            if (!map.containsKey(x)) {
-                map.put(x, rank++);
+        int shift = n;
+        int[] freq = new int[2 * n + 1];
+
+        freq[shift] = 1;
+
+        long valid = 0;
+        int lastSum = 0;
+
+        for (int i = 0; i < n; i++) {
+            if (pref[i] > lastSum) {
+                valid += freq[lastSum + shift];
+            } else {
+                valid -= freq[pref[i] + shift];
             }
+
+            cnt += valid;
+            freq[pref[i] + shift]++;
+            lastSum = pref[i];
         }
 
-        Fenwick bit = new Fenwick(rank + 2);
-
-        long ans = 0;
-
-        for (int x : prefix) {
-            int r = map.get(x);
-
-            ans += bit.query(r - 1);
-
-            bit.update(r, 1);
-        }
-
-        return ans;
+        return cnt;
     }
 }
