@@ -6,7 +6,9 @@ class Solution {
         int min = Integer.MAX_VALUE;
         for(int i = 0 ;i <= n-k ;i++){
             int diff = nums[i+k-1] - nums[i];
-            min = Math.min(min , diff);
+            if(min>diff){
+                min=diff;
+            }
         }
         return min;
     }
