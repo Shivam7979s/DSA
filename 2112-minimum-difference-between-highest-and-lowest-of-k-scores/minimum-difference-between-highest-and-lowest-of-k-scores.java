@@ -5,9 +5,8 @@ class Solution {
         if(k==1)return 0;
         int min=Integer.MAX_VALUE;
         for(int i=0;i<n-k+1;i++){
-            int temp=nums[i+k-1]-nums[i];
-            min=Math.min(min,temp);
-
+            int diff=nums[i+k-1]-nums[i];
+            min=Math.min(min,diff);
         }
         return min;
     }
