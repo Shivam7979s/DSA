@@ -8,10 +8,7 @@ class Solution {
             sum +=rem;
             prod *=rem;
             temp/=10;
-
         }
-        int div=sum+prod;
-        return n%div==0;
-    
+        return n%(sum+prod)==0;
     }
 }
