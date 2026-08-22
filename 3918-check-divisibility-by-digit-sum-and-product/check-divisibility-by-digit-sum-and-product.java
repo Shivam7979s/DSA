@@ -11,13 +11,7 @@ class Solution {
 
         }
         int div=sum+prod;
-
-        if(n%div==0){
-            return true;
-        }
-        else{
-            return false;
-        }
+        return n%div==0;
     
     }
 }
