@@ -24,8 +24,8 @@ class Solution {
             return nums[ans];
         }
         else{
-            double b = nums[n/2]+nums[(n/2)-1];
-            return b/2;
+            // double b = nums[n/2]+nums[(n/2)-1];
+            return (double)(nums[n/2]+nums[(n/2)-1])/2;
         }
 
     }
