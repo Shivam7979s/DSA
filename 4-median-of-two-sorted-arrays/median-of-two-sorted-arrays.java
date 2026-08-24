@@ -4,6 +4,7 @@ class Solution {
         int n2 = nums2.length;
         int[] nums = new int[n1+n2];
         int n = nums.length;
+        
         int i = 0, j = 0, k = 0;
         while (i < n1 && j < n2) {
             if (nums1[i] <= nums2[j]) {
@@ -26,5 +27,7 @@ class Solution {
             double b = nums[n/2]+nums[(n/2)-1];
             return b/2;
         }
+
     }
+    
 }
