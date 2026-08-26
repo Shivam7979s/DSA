@@ -1,23 +1,19 @@
 class Solution {
-    public int missingMultiple(int[] nums, int k) {
-        int n = nums.length;
-        int m = k;
-
+    public int missingMultiple( int[] nums, int k ) {
+        int n = nums.length ;
+        int m = k ;
         while (true) {
-            boolean found = false;
-
+            boolean found = false ;
             for (int i = 0; i < n; i++) {
                 if (nums[i] == m) {
-                    found = true;
-                    break;
+                    found = true ;
+                    break ;
                 }
             }
-
             if (!found) {
-                return m;
+                return m ;
             }
-
-            m += k;
+            m += k ;
         }
     }
 }
