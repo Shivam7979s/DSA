@@ -8,18 +8,17 @@ class Solution {
 
         for(int i=0;i<n1;i++){
             nums[i]=nums1[i];
-        }
+            }
         for(int i=0,j=n1;i<n2;i++,j++){
             nums[j]=nums2[i];
-        }
+            }
         Arrays.sort(nums);
+
         if(n%2==0){
             int m = n/2;
-            double ans = (nums[m]+nums[m-1])/2.00;
-            return ans;
-        }
+            return (double)(nums[m]+nums[m-1])/2.00;
+            }
         else{
-            
             return nums[n/2];
         }
 
