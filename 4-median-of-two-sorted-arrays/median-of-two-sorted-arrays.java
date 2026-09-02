@@ -19,8 +19,8 @@ class Solution {
             return ans;
         }
         else{
-            int m = n/2;
-            return nums[m];
+            
+            return nums[n/2];
         }
 
     }
