@@ -16,7 +16,8 @@ class Solution {
 
         if(n%2==0){
             int m = n/2;
-            return (double)(nums[m]+nums[m-1])/2.00;
+            double ans = (nums[m]+nums[m-1])/2.00;
+            return ans;
             }
         else{
             return nums[n/2];
