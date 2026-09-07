@@ -1,20 +1,21 @@
 class Solution {
     public int numberOfSteps(int num) {
-        int count=0;
-        return reduce(num, count);
+       
+        return steps(num);
        
     }
-    public int reduce(int n,int count){
-       
-        if(n==0){
-          
+    static int steps(int n){
+        return helper(n,0);
+    }
+    static int helper(int n, int count){
+        if(n == 0){
             return count;
         }
-        if(n%2==0){
-           return reduce(n/2,count+1);
+        if(n % 2 == 0){
+            return helper(n/2, count+1);
         }
         else{
-            return reduce(n-1,count+1);
+            return helper(n-1, count+1);
         }
       
     }
