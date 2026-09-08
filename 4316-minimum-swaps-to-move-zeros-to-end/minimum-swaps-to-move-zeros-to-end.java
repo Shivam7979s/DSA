@@ -22,9 +22,6 @@ class Solution {
             else{
                 i++;
             }
-            
-
-          
         }
         return step;
     }
