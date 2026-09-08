@@ -6,8 +6,8 @@ class Solution {
             return 0;
         }
         int step = 0;
-        for(int i=0, j=n-1;j>0 && i<n;){
-            if(nums[i]==0 && nums[j]!=0&& j>=i ){
+        for(int i=0, j=n-1;j>0 && j>= i&& i<n;){
+            if(nums[i]==0 && nums[j]!=0){
                 int temp =nums[i];
                 nums[i]= nums[j];
                 nums[j]=temp;
