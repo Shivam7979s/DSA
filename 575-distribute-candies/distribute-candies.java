@@ -9,7 +9,6 @@ class Solution {
                 type++;
             }
         }
-        if(can >= type)return type;
-        else return can;
+        return Math.min(can, type);
     }
 }
