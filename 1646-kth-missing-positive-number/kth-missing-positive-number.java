@@ -4,21 +4,16 @@ class Solution {
         int i =1;
         int ct = 0;
         while (true){
-            boolean flag = false;
-
-            if(isAvailable(nums ,i) ){
-                flag = true;
-                }
-
-            i++;
-            if(!flag){
+            if (!isAvailable(nums, i)){
                 ct++;
             }
+            i++;
+
             if(ct == k){
-                break;
+                return i-1;
             }
         }
-        return i-1;
+
     }
     static boolean isAvailable(int[] nums , int i ){
         int n = nums.length;
