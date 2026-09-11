@@ -7,6 +7,10 @@ class Solution {
         char[] s2Array = s2.toCharArray();
         Arrays.sort(s1Array);
         Arrays.sort(s2Array);
-        return Arrays.equals(s1Array, s2Array);
+        
+        for(int i = 0 ; i < s1.length(); i++){
+            if(s1Array[i] != s2Array[i])return false;
+        }
+        return true;
     }
 }
