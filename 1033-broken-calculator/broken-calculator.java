@@ -1,6 +1,6 @@
 class Solution {
     public int brokenCalc(int startValue, int target) {
-       int c = 0;
+       int count = 0;
         while(target > startValue){
             if(target % 2 == 0){
                 target /= 2;
@@ -8,9 +8,8 @@ class Solution {
             else{
                 target +=1;
             }
-            c++;
+            count++;
         }
-        return c+(startValue-target);
-        
+        return count+(startValue-target);
     }
 }
