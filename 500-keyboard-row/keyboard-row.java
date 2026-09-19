@@ -3,7 +3,9 @@ class Solution {
         String first = "qwertyuiop";
         String second = "asdfghjkl";
         String third = "zxcvbnm";
+
         List<String> list = new ArrayList<>();
+        
         for (int i = 0; i < words.length; i++) {
             String[] a = words[i].toLowerCase().split("");
             boolean flag = true;
