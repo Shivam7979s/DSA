@@ -29,7 +29,6 @@ class Solution {
             if (flag)
                 list.add(words[i]);
         }
-     
         return list.toArray(new String[list.size()]);
     }
 }
