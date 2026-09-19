@@ -1,4 +1,3 @@
-
 class Solution {
     public String[] findWords(String[] words) {
         String first = "qwertyuiop";
@@ -7,29 +6,32 @@ class Solution {
 
         List<String> list = new ArrayList<>();
 
-        for (int i = 0; i < words.length; i++) {
-            String[] a = words[i].toLowerCase().split("");
-            boolean flag = true;
-            String temp = "";
+        for (String word : words) {
+            String lower = word.toLowerCase();
+            String row;
 
-            if (first.contains(a[0])) {
-                temp = first;
-            }
-            else if (second.contains(a[0])) {
-                temp = second;
-            }
-            else {
-                temp = third;
+            if (first.contains("" + lower.charAt(0))) {
+                row = first;
+            } else if (second.contains("" + lower.charAt(0))) {
+                row = second;
+            } else {
+                row = third;
             }
 
-            for (int j = 1; j < a.length; j++)
-                if (!temp.contains(a[j])) {
-                    flag = false;
+            boolean valid = true;
+
+            for (int j = 1; j < lower.length(); j++) {
+                if (!row.contains("" + lower.charAt(j))) {
+                    valid = false;
                     break;
                 }
-            if (flag)
-                list.add(words[i]);
+            }
+
+            if (valid) {
+                list.add(word);
+            }
         }
-        return list.toArray(new String[list.size()]);
+
+        return list.toArray(new String[0]);
     }
 }
