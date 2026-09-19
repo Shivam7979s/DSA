@@ -1,35 +1,38 @@
 import java.util.*;
+
 class Solution {
     public String[] findWords(String[] words) {
-        String first = "qwertyuiop";
-        String second = "asdfghjkl";
-        String third = "zxcvbnm";
+        ArrayList<String> list = new ArrayList<>();
 
-        List<String> list = new ArrayList<>();
+        String row1 = "qwertyuiop";
+        String row2 = "asdfghjkl";
+        String row3 = "zxcvbnm";
 
-        for (int i = 0; i < words.length; i++) {
-            String[] a = words[i].toLowerCase().split("");
-            boolean flag = true;
-            String temp = "";
+        for (String word : words) {
+            String w = word.toLowerCase();
 
-            if (first.contains(a[0])) {
-                temp = first;
-            }
-            else if (second.contains(a[0])) {
-                temp = second;
-            }
-            else {
-                temp = third;
-            }
+            String row;
 
-            for (int j = 1; j < a.length; j++)
-                if (!temp.contains(a[j])) {
-                    flag = false;
+            if (row1.indexOf(w.charAt(0)) != -1)
+                row = row1;
+            else if (row2.indexOf(w.charAt(0)) != -1)
+                row = row2;
+            else
+                row = row3;
+
+            boolean valid = true;
+
+            for (char c : w.toCharArray()) {
+                if (row.indexOf(c) == -1) {
+                    valid = false;
                     break;
                 }
-            if (flag)
-                list.add(words[i]);
+            }
+
+            if (valid)
+                list.add(word);
         }
-        return list.toArray(new String[list.size()]);
+
+        return list.toArray(new String[0]);
     }
 }
