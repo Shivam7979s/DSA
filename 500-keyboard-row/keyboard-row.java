@@ -6,32 +6,29 @@ class Solution {
 
         List<String> list = new ArrayList<>();
 
-        for (String word : words) {
-            String lower = word.toLowerCase();
-            String row;
+        for (int i = 0; i < words.length; i++) {
+            String[] a = words[i].toLowerCase().split("");
+            boolean flag = true;
+            String temp = "";
 
-            if (first.contains("" + lower.charAt(0))) {
-                row = first;
-            } else if (second.contains("" + lower.charAt(0))) {
-                row = second;
-            } else {
-                row = third;
+            if (first.contains(a[0])) {
+                temp = first;
+            }
+            else if (second.contains(a[0])) {
+                temp = second;
+            }
+            else {
+                temp = third;
             }
 
-            boolean valid = true;
-
-            for (int j = 1; j < lower.length(); j++) {
-                if (!row.contains("" + lower.charAt(j))) {
-                    valid = false;
+            for (int j = 1; j < a.length; j++)
+                if (!temp.contains(a[j])) {
+                    flag = false;
                     break;
                 }
-            }
-
-            if (valid) {
-                list.add(word);
-            }
+            if (flag)
+                list.add(words[i]);
         }
-
-        return list.toArray(new String[0]);
+        return list.toArray(new String[list.size()]);
     }
 }
